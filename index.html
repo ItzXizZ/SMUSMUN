@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>SMUSMUN</title>
+  <title>SMUSMUN 2025</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  
   <!-- Favicons -->
   <link href="https://cdn.pixabay.com/photo/2014/04/02/10/23/united-nations-303670_1280.png" rel="icon">
   <link href="https://cdn.pixabay.com/photo/2014/04/02/10/23/united-nations-303670_1280.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700" rel="stylesheet">
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,173 +24,192 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous">
-</script>
-<script> 
-  $(function(){
-    $("#header").load("header.html"); 
-  });
-  </script> 
-  <!-- Template Main CSS File -->
+  <!-- Custom CSS -->
+  <style>
+    /* Hero section styling (unchanged for desktop) */
+    #hero {
+      position: relative;
+      left: 5%;
+      min-height: 600px; /* Adjust as needed */
+      border-radius: 0 0 30px 30px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+    }
+    #hero .container {
+      height: 100%;
+    }
+    #hero .row {
+      height: 100%;
+    }
+    #hero .hero-img {
+      position: relative;
+      height: 100%;
+      overflow: hidden; /* Ensures image stays within the rounded corners if set */
+      border-radius: 20px;
+    }
+    #hero .hero-img img {
+      /* If you’re using absolute positioning, you can keep or remove it; 
+         your code doesn't show it, but typically you'd do:
+         position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+      */
+    }
 
-  <!-- =======================================================
-  * Template Name: Vesperr - v4.7.0
-  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    /* Description section styling (unchanged) */
+    #description {
+      border-radius: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    #description .col-md-6 img {
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Gallery images (unchanged) */
+    .gallery-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    /* ========================================================
+       ONLY FOR MOBILE (max-width: 767px)
+       Remove the hero image column to eliminate white space
+       ======================================================== */
+    @media (max-width: 767px) {
+      #hero {
+        left: 0;            /* remove left offset */
+        border-radius: 40px;
+        box-shadow: none;
+        background-color: #fff;
+        padding: 30px 15px; /* some spacing around the content */
+        display: block;     /* stack content vertically */
+        max-height: 100px;   /* no forced height on mobile */
+      }
+      
+      /* Hide the entire image column so no whitespace remains */
+      #hero .col-lg-7 {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
-
-
 <body>
   <div id="header"></div>
-  <!-- ======= Header ======= -->
-  
 
-  <!-- ======= Hero Section ======= -->
+  <!-- Hero Section -->
   <section id="hero" class="d-flex align-items-center">
-
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+      <div class="row align-items-center">
+        <!-- Registration Text -->
+        <div class="col-lg-5 pt-5 pt-lg-0 order-2 order-lg-1">
           <h1 data-aos="fade-up">SMUSMUN Has Opened Delegate Registration</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Conference Dates: April 14th and 15th</h2>
+          <h2 data-aos="fade-up" data-aos-delay="400">Conference Dates: April 4th-5th</h2>
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="https://www.jotform.com/form/223307344338049" class="btn-get-started scrollto">Register here</a>
           </div>
         </div>
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200"><br><br><br><br><br><br><br>
-          <img src="./assets/img/image.png" class="animated" >
+        <!-- Hero Image -->
+        <div class="col-lg-7 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/image.png" alt="SMUSMUN 2025">
         </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
-  <!DOCTYPE html>
-  <html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-    <title>SMUSMUN</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-  
-    <!-- Favicons -->
-    <link href="https://cdn.pixabay.com/photo/2014/04/02/10/23/united-nations-303670_1280.png" rel="icon">
-    <link href="https://cdn.pixabay.com/photo/2014/04/02/10/23/united-nations-303670_1280.png" rel="apple-touch-icon">
-  
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="bootstrap.css" />
-     <link href="assets/css/style.css" rel="stylesheet">
-  
-  
-    <!--owl slider stylesheet -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  
-    <!-- font awesome style -->
-    <link href="font-awesome.min.css" rel="stylesheet" />
-  
-    <!-- Custom styles for this template -->
-    <link href="style1.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="responsive.css" rel="stylesheet" />
-  
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-  
-    <!-- =======================================================
-    * Template Name: Vesperr - v4.7.0
-    * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-  </script>
-  <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-      $("#footer").load("footer.html"); 
-    });
-    </script> 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-  
-    <!-- =======================================================
-    * Template Name: Vesperr - v4.7.0
-    * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-  </head>
-  
-  <body>
-    <section class="service_section layout_padding">
-      <div class="container">
+  <!-- Description Section -->
+  <section id="description" class="py-5 my-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Description Image -->
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <img src="Gal (8).png" class="img-fluid" alt="About SMUSMUN">
+        </div>
+        <!-- Description Text -->
+        <div class="col-md-6" data-aos="fade-left">
+          <h2>About SMUSMUN</h2>
+          <p>
+            SMUSMUN is a premier Model United Nations conference that brings together students from diverse backgrounds 
+            to engage in dynamic debates and simulations of global issues. Our conference aims to empower young minds with 
+            diplomacy, critical thinking, and leadership skills in a collaborative environment. Join us for an enriching experience 
+            that combines academic rigor with practical, real-world insights.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="service_container">
-          <div class="row">
-            <center>
-            <div class="col-md-8">
-  <br>
-  <center>
-              <img src="DSC_0001.JPG" width="100%" style="border-radius: 12px" data-aos="fade-up"><br> </center>
-  
-              <div class="box b2">
-                
-                <div class="detail-box" border="20px">
-                 
-  <element id="hero">
-                  </element>
-                  
-                      <p style="font-family:'Times New Roman', Times, serif"><b>About SMUSMUN:</b><br><br> St. Michaels University School Model United Nation (SMUSMUN) is a fully student led MUN conference open to delegates of all experience levels. A two day conference hosted at the St. Michaels University School Richmond Road campus, SMUSMUN aims to simulate foreign relations, teach delegates diplomacy and other skills, and leave delegates with a memorable experience. Entering its third iteration, for the first time SMUSMUN is proud to welcome delegates from other schools. </p>
-                  </container>
-  
-                </div>
-              </div>
-            </div>
-            </center>
-        </section>
-  
-  
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-  
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  
-  </body>
-  
-  </html>
-  
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Past Conferences and Campus Gallery</h2>
+      <div class="row">
+        <!-- Gallery Item 1 -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card">
+            <img src="Gal (1).jpg" class="card-img-top gallery-img" alt="Conference 1">
+          </div>
+        </div>
+        <!-- Gallery Item 2 -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <img src="Gal (6).png" class="card-img-top gallery-img" alt="Conference 2">
+          </div>
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <img src="Gal (4).jpg" class="card-img-top gallery-img" alt="Conference 3">
+          </div>
+        </div>
+        <!-- Gallery Item 4 -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card">
+            <img src="Gal (5).jpg" class="card-img-top gallery-img" alt="Conference 4">
+          </div>
+        </div>
+        <!-- Gallery Item 5 -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="card">
+            <img src="Gal (2).jpg" class="card-img-top gallery-img" alt="Conference 5">
+          </div>
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card">
+            <img src="Gal (7).png" class="card-img-top gallery-img" alt="Conference 6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <div id="footer"></div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Back-to-top button -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -205,7 +222,5 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
