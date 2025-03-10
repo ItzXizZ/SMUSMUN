@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ff7241;
+  background: #a90606;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #e18a57;
+  background: #a90606;
   color: #fff;
 }
 .back-to-top.active {
@@ -168,10 +168,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #ff7241;
+  color: #a90606;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-  background: #ff7241;
+  background: #a90606;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #ff7241;
+  background: #a90606;
 }
 .navbar .dropdown ul {
   display: block;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #ff7241;
+  color: #a90606;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #ff7241;
+  color: #a90606;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #ff7241;
+  color: #a90606;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -354,8 +354,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #ff7241;
-  border: 2px solid #ff7241;
+  color: #a90606;
+  border: 2px solid #a90606;
 }
 #hero .btn-get-started:hover {
   background: #3498db;
@@ -1265,7 +1265,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #a90606;
   text-align: left;
   padding: 15px;
   font-weight: 600;

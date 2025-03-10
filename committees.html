@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
+  <title>SMUSMUN - Committees</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>SMUSMUN</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link href="https://cdn.pixabay.com/photo/2014/04/02/10/23/united-nations-303670_1280.png" rel="icon">
   <link href="https://cdn.pixabay.com/photo/2014/04/02/10/23/united-nations-303670_1280.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,124 +14,281 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
-   <link href="assets/css/style.css" rel="stylesheet">
-
-
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link href="font-awesome.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="style1.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="responsive.css" rel="stylesheet" />
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+  </script>
 
-  <!-- =======================================================
-  * Template Name: Vesperr - v4.7.0
-  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous">
-</script>
-<script> 
-  $(function(){
-    $("#header").load("header.html"); 
-    $("#footer").load("footer.html"); 
-  });
-  </script> 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Vesperr - v4.7.0
-  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .committee-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .committee-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    }
+    
+    .committee-card h4 {
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #2c4964;
+    }
+    
+    .committee-card h5 {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #4e7ca1;
+    }
+    
+    .committee-card p {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #2c4964;
+    }
+    
+    .section-title h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      left: calc(50% - 60px);
+    }
+    
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #3498db;
+      bottom: 0;
+      left: calc(50% - 20px);
+    }
+    
+    .section-bg {
+      background-color: #f6f9fe;
+    }
+    
+    /* Additional styling for committee icons */
+    .committee-icon {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #3498db;
+    }
+    
+    /* Row spacing */
+    .row {
+      margin-bottom: 20px;
+    }
+    
+    /* Button styling */
+    .btn-primary {
+      background-color: #3498db;
+      border-color: #3498db;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    
+    .btn-primary:hover {
+      background-color: #2980b9;
+      border-color: #2980b9;
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline-primary {
+      color: #3498db;
+      border-color: #3498db;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    
+    .btn-outline-primary:hover {
+      background-color: #3498db;
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    /* Push button to bottom of card */
+    .committee-card .text-center {
+      margin-top: auto;
+    }
+  </style>
 </head>
-
 <body>
   <div id="header"></div>
-  <section class="service_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Committees
-        </h2>
-      </div>
-      <div class="service_container">
+  <main id="main">
+    <br><br>
+    <section id="committees" class="committees section-bg py-5">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>SMUSMUN 2025 Committees</h2>
+          <p>Explore our diverse range of committees for SMUSMUN 2025</p>
+          <div class="text-center mt-4">
+            <a href="https://docs.google.com/spreadsheets/d/195rJWeRF02Ok46xn1qBJ5gawcbDtnbDFJkttvKK0lLQ/edit?usp=sharing" target="_blank" class="btn btn-primary btn-lg">
+              <i class="bi bi-table me-2"></i>Country Matrix
+            </a>
+          </div>
+        </div>
+
         <div class="row">
-          <div class="col-md-4">
-            <div class="box b1" data-aos="fade-up">
-              <div class="img-box">
-                <img src="https://www.pvtorch.com/wp-content/uploads/2018/10/MUN-logo.jpg" alt="" class="" />
+          <!-- GA Committee -->
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="committee-card">
+              <div class="committee-icon">
+                <i class="bi bi-globe"></i>
               </div>
-              <div class="detail-box">
-                <h5>
-                  The Organization of the Petroleum Exporting Countries <br><br>
-                  Topic: Maintaining Control of Oil Prices
-                </h5>
-                <br>
-                <element id="hero">
-<element id="hero">
-                <a href="OPEC.html" class="btn-get-started scrollto">About Committee</a>
-                </element>                </element>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box b2" data-aos="fade-up">
-              <div class="img-box">
-                <img src="https://www.pvtorch.com/wp-content/uploads/2018/10/MUN-logo.jpg" alt="" class="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Historical Crisis Committee <br><br>
-                  Topic: Chinese Civil War
-                </h5>
-                <br>
-<element id="hero">
-                <a href="HCC.html" class="btn-get-started scrollto">About Committee</a>
-                </element>
+              <h4>General Assembly (GA)</h4>
+              <h5>Topic: Illicit Firearm Trafficking</h5>
+              <p>
+                Illicit weapon trafficking fuels violence, destabilizes nations, and enables crime and terrorism. This transnational issue, exacerbated by weak borders and corruption, requires global cooperation to address. Regions like Libya, Sudan, Syria, Yemen, Mexico, and Colombia are key hubs, with major arms producers like the U.S., Russia, and China fueling illegal markets.
+              </p>
+              <p>
+                The UN and DISEC lead efforts with initiatives like the Arms Trade Treaty, but enforcement gaps remain. Tackling this crisis demands international cooperation and pragmatic solutions for global security.
+              </p>
+              <div class="text-center mt-4">
+                <a href="DISEC Background Guide.pdf" class="btn btn-outline-primary">
+                  <i class="bi bi-file-earmark-text me-2"></i>Background Guide
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="box b3" data-aos="fade-up">
-              <div class="img-box">
-                <img src="https://www.pvtorch.com/wp-content/uploads/2018/10/MUN-logo.jpg" alt="" class="" />
+
+          <!-- Crisis Committee -->
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="committee-card">
+              <div class="committee-icon">
+                <i class="bi bi-exclamation-triangle"></i>
               </div>
-              <div class="detail-box">
-                <h5>
-                  United Nations Human Rights Council  <br><br>
-                  Topic: Attacks on Journalists / Freedom of Speech Overview
-                </h5>
-                <br>
-<element id="hero">
-                <a href="UNHCR.html" class="btn-get-started scrollto">About Committee</a>
-                </element>
+              <h4>Crisis Committee</h4>
+              <h5>Topic: Russian Revolution</h5>
+              <p>
+                The Russian Revolution of 1917 shattered the Romanov dynasty and plunged Russia into political and social turmoil. As the Provisional Government struggles to maintain order, Bolsheviks, Mensheviks, monarchists, and other factions compete for control of the nation's future.
+              </p>
+              <p>
+                In this committee, delegates will navigate a rapidly changing landscape, debating issues like governance, war, and economic collapse. Will you lead Russia toward socialism, restore the monarchy, or forge a new path? With revolution at its peak, every decision will shape the fate of an empire.
+              </p>
+              <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">
+                  <i class="bi bi-file-earmark-text me-2"></i>Background Guide
+                </a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <!-- Regional Council A -->
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="committee-card">
+              <div class="committee-icon">
+                <i class="bi bi-map"></i>
+              </div>
+              <h4>Regional Council A</h4>
+              <h5>Topic: South China Sea</h5>
+              <p>
+                The South China Sea dispute has become a major issue for the U.S., with the Senate working to counter Chinese aggression while avoiding war or economic instability. Most senators reject China's Nine-Dash Line and support regional allies, but they differ on how to respond.
+              </p>
+              <p>
+                U.S. military alliances with ASEAN nations are also crucial as China expands its military power. As China's influence grows, the Senate must balance economic ties with protecting democratic allies, making its decisions critical to regional stability and global security.
+              </p>
+              <div class="text-center mt-4">
+                <a href="US Senate Background Guide.pdf" class="btn btn-outline-primary">
+                  <i class="bi bi-file-earmark-text me-2"></i>Background Guide
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- NATO -->
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="committee-card">
+              <div class="committee-icon">
+                <i class="bi bi-shield"></i>
+              </div>
+              <h4>NATO</h4>
+              <h5>Topic: Hybrid Threats</h5>
+              <p>
+                Strengthening resilience to hybrid threats is crucial to safeguarding the security of member states. As adversaries employ tactics across air, land, water, cyber, and space domains, NATO must evolve to effectively counter these multi-dimensional risks. While progress has been made, the growing sophistication of hybrid threats requires continued innovation and adaptation within NATO's strategic framework.
+              </p>
+              <p>
+                NATO's success in countering hybrid threats will depend on unified action among members, ensuring readiness and resilience in the face of an increasingly complex security landscape.
+              </p>
+              <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">
+                  <i class="bi bi-file-earmark-text me-2"></i>Background Guide
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+<center>
+        <div class="row">
+          <!-- HOC -->
+          <div class="col-lg-6 mt-4 justify-content-center" data-aos="fade-up" data-aos-delay="500">
+            <div class="committee-card">
+              <div class="committee-icon">
+                <i class="bi bi-building"></i>
+              </div>
+              <h4>House of Commons (HOC)</h4>
+              <h5>Topic: Canada's Defense Spending</h5>
+              <p>
+                Canada's defense and military spending is essential for national security and fulfilling international obligations. With rising global tensions, there is a need to balance defense funding with other priorities like healthcare and social programs.
+              </p>
+              <p>
+                However, Canada's defense budget remains lower than many allies, raising questions about its military readiness. The House of Commons must consider increasing defense investment to ensure Canada can effectively address emerging threats and maintain a strong role on the global stage.
+              </p>
+              <div class="text-center mt-4">
+                <a href="HOC Background Guide.pdf" class="btn btn-outline-primary">
+                  <i class="bi bi-file-earmark-text me-2"></i>Background Guide
+                </a>
+              </div>
+            </div>
+          </div>
+        </center>
+
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -149,10 +296,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
